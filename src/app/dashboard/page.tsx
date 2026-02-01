@@ -16,7 +16,7 @@ export default function DashboardPage() {
 
     useEffect(() => {
         // Initial fetch
-        fetch("http://localhost:5001/api/requirements/all")
+        fetch("https://gropratle-backend.onrender.com/api/requirements/all")
             .then((res) => res.json())
             .then((res) => {
                 if (res.success) {
